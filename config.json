@@ -1,0 +1,299 @@
+{
+  "configVersion": 1,
+  "topics": [
+    {
+      "id": "cleaning",
+      "name": "Cleaning Supplies",
+      "description": "Analyze your cleaning products and find healthier, less toxic alternatives for your home.",
+      "iconName": "CleaningServices",
+      "systemPrompt": "You are a health and environmental expert specializing in household cleaning products. Analyze the user's current cleaning products and habits, then provide a detailed plan with healthier, less toxic alternatives. Explain why each suggestion is healthier, include DIY options where appropriate, and consider the user's budget and household needs. Format your response in clear markdown with headers and bullet points.",
+      "questions": [
+        {
+          "id": "cleaning_products",
+          "text": "What cleaning products do you currently use?",
+          "helpText": null,
+          "type": "MULTI_LINE_TEXT",
+          "options": [],
+          "placeholder": "e.g., Lysol all-purpose, Clorox bleach, Windex..."
+        },
+        {
+          "id": "cleaning_rooms",
+          "text": "Which rooms do you clean most often?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Kitchen", "Bathrooms", "Living Areas", "Bedrooms", "Floors/Surfaces", "Laundry Room"],
+          "placeholder": null
+        },
+        {
+          "id": "cleaning_household",
+          "text": "Who lives in your household?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Pets", "Young Children (under 5)", "Infants", "Pregnant Members", "Asthma/Respiratory Issues", "Chemical Sensitivities"],
+          "placeholder": null
+        },
+        {
+          "id": "cleaning_fragrance",
+          "text": "What's your fragrance preference?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Love strong scents", "Prefer light scents", "Fragrance-free only", "No preference"],
+          "placeholder": null
+        },
+        {
+          "id": "cleaning_budget",
+          "text": "What's your budget preference?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Budget-friendly is priority", "Willing to invest more for quality", "Somewhere in between", "Interested in DIY solutions"],
+          "placeholder": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Ingredients",
+      "description": "Evaluate your eating habits and pantry staples to transition toward healthier, less processed choices.",
+      "iconName": "Restaurant",
+      "systemPrompt": "You are a nutritionist and food science expert. Analyze the user's current eating habits, pantry staples, and cooking practices. Provide a comprehensive plan to transition toward healthier, less processed food choices. Include specific product swaps, recipe suggestions, and explain the health benefits. Format your response in clear markdown.",
+      "questions": [
+        {
+          "id": "food_pantry",
+          "text": "What are your pantry staples?",
+          "helpText": null,
+          "type": "MULTI_LINE_TEXT",
+          "options": [],
+          "placeholder": "e.g., white rice, canned soups, pasta, olive oil..."
+        },
+        {
+          "id": "food_oils",
+          "text": "What cooking oils do you use?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Vegetable/Canola Oil", "Olive Oil", "Coconut Oil", "Avocado Oil", "Butter/Ghee", "Other Seed Oils"],
+          "placeholder": null
+        },
+        {
+          "id": "food_dietary",
+          "text": "Any dietary restrictions?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Gluten-Free", "Dairy-Free", "Nut Allergy", "Vegetarian", "Vegan", "Low Sodium", "Diabetic-Friendly"],
+          "placeholder": null
+        },
+        {
+          "id": "food_processed",
+          "text": "How often do you eat processed/packaged foods?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Daily", "A few times a week", "Occasionally", "Rarely"],
+          "placeholder": null
+        },
+        {
+          "id": "food_goals",
+          "text": "What are your top food health goals?",
+          "helpText": null,
+          "type": "MULTI_LINE_TEXT",
+          "options": [],
+          "placeholder": "e.g., reduce sugar, eat more whole grains, meal prep..."
+        }
+      ]
+    },
+    {
+      "id": "personal_care",
+      "name": "Personal Care",
+      "description": "Review your personal care routine and discover cleaner alternatives free from harmful chemicals.",
+      "iconName": "Face",
+      "systemPrompt": "You are a dermatologist and clean beauty expert. Analyze the user's personal care routine and product usage, then recommend healthier alternatives free from harmful chemicals. Explain ingredient concerns, suggest clean alternatives at various price points, and consider the user's skin type and concerns. Format your response in clear markdown.",
+      "questions": [
+        {
+          "id": "personal_care_products",
+          "text": "List your daily personal care products",
+          "helpText": null,
+          "type": "MULTI_LINE_TEXT",
+          "options": [],
+          "placeholder": "e.g., CeraVe cleanser, Dove deodorant, Head & Shoulders..."
+        },
+        {
+          "id": "personal_care_skin_type",
+          "text": "What's your skin type?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Oily", "Dry", "Combination", "Sensitive", "Normal"],
+          "placeholder": null
+        },
+        {
+          "id": "personal_care_concerns",
+          "text": "Any specific skin concerns?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Acne/Breakouts", "Aging/Wrinkles", "Hyperpigmentation", "Eczema/Dermatitis", "Dryness/Flaking", "Sun Damage"],
+          "placeholder": null
+        },
+        {
+          "id": "personal_care_fragrance",
+          "text": "How sensitive are you to fragrances?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Very sensitive - causes reactions", "Somewhat sensitive", "Not sensitive", "Unsure"],
+          "placeholder": null
+        },
+        {
+          "id": "personal_care_certifications",
+          "text": "Which certifications matter to you?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Organic/USDA", "Cruelty-Free", "Vegan", "EWG Verified", "Dermatologist Tested", "Fragrance-Free"],
+          "placeholder": null
+        }
+      ]
+    },
+    {
+      "id": "lifestyle",
+      "name": "Lifestyle & Habits",
+      "description": "Optimize your daily habits, sleep patterns, and activity levels for a healthier lifestyle.",
+      "iconName": "SelfImprovement",
+      "systemPrompt": "You are a wellness coach and lifestyle optimization expert. Analyze the user's daily habits, sleep patterns, stress levels, and activity, then create a personalized wellness improvement plan. Focus on practical, incremental changes that are sustainable. Format your response in clear markdown.",
+      "questions": [
+        {
+          "id": "lifestyle_routine",
+          "text": "Describe your typical daily routine",
+          "helpText": null,
+          "type": "MULTI_LINE_TEXT",
+          "options": [],
+          "placeholder": "e.g., Wake at 7am, coffee, desk job 9-5, dinner at 7pm..."
+        },
+        {
+          "id": "lifestyle_sleep",
+          "text": "How many hours of sleep do you typically get?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Less than 5", "5-6 hours", "6-7 hours", "7-8 hours", "More than 8"],
+          "placeholder": null
+        },
+        {
+          "id": "lifestyle_stress",
+          "text": "How would you rate your stress level?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Very high", "High", "Moderate", "Low", "Very low"],
+          "placeholder": null
+        },
+        {
+          "id": "lifestyle_activity",
+          "text": "What physical activity do you currently do?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Walking", "Running/Jogging", "Weight Training", "Yoga/Stretching", "Swimming", "Cycling", "Team Sports", "None Currently"],
+          "placeholder": null
+        },
+        {
+          "id": "lifestyle_improve",
+          "text": "Which areas would you most like to improve?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Sleep Quality", "Stress Management", "Physical Fitness", "Mental Health", "Energy Levels", "Work-Life Balance", "Screen Time", "Social Connections"],
+          "placeholder": null
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "name": "Home Environment",
+      "description": "Assess your living space for potential health concerns and get actionable recommendations.",
+      "iconName": "Home",
+      "systemPrompt": "You are an environmental health specialist focusing on indoor living spaces. Analyze the user's home environment, identify potential health concerns from their description, and provide actionable recommendations for creating a healthier living space. Cover air quality, water quality, materials, and household items. Format your response in clear markdown.",
+      "questions": [
+        {
+          "id": "home_describe",
+          "text": "Describe your home",
+          "helpText": null,
+          "type": "MULTI_LINE_TEXT",
+          "options": [],
+          "placeholder": "e.g., 2BR apartment, built in 1990, carpet in bedrooms..."
+        },
+        {
+          "id": "home_water",
+          "text": "What is your primary water source?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["City/Municipal water", "Well water", "Filtered (pitcher/faucet)", "Reverse osmosis system", "Bottled water primarily"],
+          "placeholder": null
+        },
+        {
+          "id": "home_items",
+          "text": "Check all items in your home",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Air Purifier", "Non-Stick Cookware", "Plastic Food Containers", "Scented Candles/Air Fresheners", "Water Filter", "Houseplants", "Humidifier/Dehumidifier", "Lead Paint (older home)"],
+          "placeholder": null
+        },
+        {
+          "id": "home_air_quality",
+          "text": "Any air quality concerns?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Dust/Allergens", "Mold/Mildew", "Pet Dander", "Smoke Exposure", "Chemical Odors", "Poor Ventilation", "Near Busy Road"],
+          "placeholder": null
+        },
+        {
+          "id": "home_hvac",
+          "text": "What heating/cooling system do you use?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Central HVAC", "Window Units", "Radiator/Baseboard", "Heat Pump", "Space Heaters", "Fireplace/Wood Stove"],
+          "placeholder": null
+        }
+      ]
+    },
+    {
+      "id": "supplements",
+      "name": "Nutrition & Supplements",
+      "description": "Get evidence-based recommendations for optimizing your supplement regimen and dietary nutrition.",
+      "iconName": "Medication",
+      "systemPrompt": "You are a clinical nutritionist specializing in dietary supplementation. Analyze the user's current supplement regimen, health goals, and dietary patterns. Provide evidence-based recommendations for optimizing their supplementation, flag any potential interactions, and suggest food-first alternatives where possible. Format your response in clear markdown.",
+      "questions": [
+        {
+          "id": "supplements_current",
+          "text": "What supplements do you currently take?",
+          "helpText": null,
+          "type": "MULTI_LINE_TEXT",
+          "options": [],
+          "placeholder": "e.g., Vitamin D 2000IU, Fish Oil, Multivitamin..."
+        },
+        {
+          "id": "supplements_goals",
+          "text": "What are your health goals for supplementation?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Immune Support", "Energy/Fatigue", "Joint Health", "Gut Health", "Heart Health", "Brain/Focus", "Bone Health", "Muscle Recovery", "Skin/Hair/Nails", "Sleep Support"],
+          "placeholder": null
+        },
+        {
+          "id": "supplements_deficiencies",
+          "text": "Any known nutrient deficiencies?",
+          "helpText": null,
+          "type": "MULTI_LINE_TEXT",
+          "options": [],
+          "placeholder": "e.g., low Vitamin D, iron deficiency, B12..."
+        },
+        {
+          "id": "supplements_medications",
+          "text": "Are you currently on any medications?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Yes - prescription medications", "Yes - over-the-counter only", "No medications", "Prefer not to say"],
+          "placeholder": null
+        },
+        {
+          "id": "supplements_diet",
+          "text": "What best describes your diet?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Standard American Diet", "Mediterranean", "Keto/Low-Carb", "Plant-Based", "Paleo", "No specific diet"],
+          "placeholder": null
+        }
+      ]
+    }
+  ]
+}
