@@ -1,5 +1,5 @@
 {
-  "configVersion": 1,
+  "configVersion": 2,
   "topics": [
     {
       "id": "cleaning",
@@ -291,6 +291,349 @@
           "helpText": null,
           "type": "MULTIPLE_CHOICE",
           "options": ["Standard American Diet", "Mediterranean", "Keto/Low-Carb", "Plant-Based", "Paleo", "No specific diet"],
+          "placeholder": null
+        }
+      ]
+    },
+    {
+      "id": "mental_health",
+      "name": "Mental Health & Mindfulness",
+      "description": "Build a personalized mindfulness and mental wellness plan to reduce anxiety, improve focus, and strengthen emotional resilience.",
+      "iconName": "Psychology",
+      "systemPrompt": "You are a licensed clinical psychologist and certified mindfulness instructor with over 15 years of experience in cognitive behavioral therapy and stress reduction techniques. Analyze the user's current mental health habits, stress triggers, and emotional patterns. Create a personalized mental wellness plan that includes evidence-based mindfulness practices, breathing exercises, journaling prompts, and cognitive reframing techniques. Be warm, non-judgmental, and practical. Emphasize that your advice is educational and does not replace professional therapy. Suggest when professional help may be beneficial. Format your response in clear markdown with headers, bullet points, and a weekly practice schedule.",
+      "questions": [
+        {
+          "id": "mental_health_current",
+          "text": "How would you describe your current mental/emotional state?",
+          "helpText": null,
+          "type": "MULTI_LINE_TEXT",
+          "options": [],
+          "placeholder": "e.g., Feeling anxious about work, trouble concentrating, generally okay but want to improve..."
+        },
+        {
+          "id": "mental_health_challenges",
+          "text": "What mental health challenges do you experience?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Anxiety/Worry", "Low Mood/Sadness", "Difficulty Concentrating", "Overwhelm/Burnout", "Irritability/Anger", "Loneliness/Isolation", "Perfectionism", "Negative Self-Talk"],
+          "placeholder": null
+        },
+        {
+          "id": "mental_health_practices",
+          "text": "Do you currently practice any of the following?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Meditation", "Journaling", "Therapy/Counseling", "Breathing Exercises", "Gratitude Practice", "Yoga/Tai Chi", "None of These"],
+          "placeholder": null
+        },
+        {
+          "id": "mental_health_time",
+          "text": "How much time can you dedicate to mental wellness daily?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["5 minutes or less", "5-15 minutes", "15-30 minutes", "30+ minutes"],
+          "placeholder": null
+        },
+        {
+          "id": "mental_health_goals",
+          "text": "What mental wellness goals are most important to you?",
+          "helpText": null,
+          "type": "MULTI_LINE_TEXT",
+          "options": [],
+          "placeholder": "e.g., Better manage work stress, sleep without racing thoughts, feel more present with family..."
+        }
+      ]
+    },
+    {
+      "id": "fitness_exercise",
+      "name": "Fitness & Exercise",
+      "description": "Get a personalized exercise plan tailored to your fitness level, goals, and available equipment.",
+      "iconName": "FitnessCenter",
+      "systemPrompt": "You are a certified personal trainer and exercise physiologist with expertise in program design for all fitness levels. Analyze the user's current fitness level, goals, available equipment, and any physical limitations. Create a personalized, progressive exercise plan that is safe, effective, and sustainable. Include warm-up and cool-down recommendations, rep/set schemes, rest periods, and weekly scheduling. Emphasize proper form cues for key exercises. Note that the user should consult a physician before starting any new exercise program, especially if they have pre-existing conditions. Format your response in clear markdown with a structured weekly plan, exercise descriptions, and progression tips.",
+      "questions": [
+        {
+          "id": "fitness_level",
+          "text": "What is your current fitness level?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Beginner (little to no exercise)", "Intermediate (exercise 2-3x/week)", "Advanced (exercise 4-5x/week)", "Athlete (daily structured training)"],
+          "placeholder": null
+        },
+        {
+          "id": "fitness_goals",
+          "text": "What are your primary fitness goals?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Lose Weight/Fat", "Build Muscle/Strength", "Improve Cardiovascular Health", "Increase Flexibility/Mobility", "Train for a Specific Event", "General Health & Longevity", "Improve Posture", "Injury Rehabilitation"],
+          "placeholder": null
+        },
+        {
+          "id": "fitness_equipment",
+          "text": "What equipment do you have access to?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Full Gym Membership", "Dumbbells/Kettlebells", "Resistance Bands", "Pull-Up Bar", "Treadmill/Stationary Bike", "Yoga Mat Only", "No Equipment (Bodyweight Only)"],
+          "placeholder": null
+        },
+        {
+          "id": "fitness_limitations",
+          "text": "Do you have any injuries or physical limitations?",
+          "helpText": null,
+          "type": "MULTI_LINE_TEXT",
+          "options": [],
+          "placeholder": "e.g., Bad knees, lower back pain, shoulder impingement, recovering from surgery..."
+        },
+        {
+          "id": "fitness_schedule",
+          "text": "How many days per week can you exercise?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["1-2 days", "3-4 days", "5-6 days", "Every day"],
+          "placeholder": null
+        }
+      ]
+    },
+    {
+      "id": "sleep_optimization",
+      "name": "Sleep Optimization",
+      "description": "Analyze your sleep patterns and environment to build a science-backed plan for deeper, more restorative sleep.",
+      "iconName": "Spa",
+      "systemPrompt": "You are a board-certified sleep medicine specialist and chronobiologist. Analyze the user's sleep habits, bedroom environment, evening routines, and any sleep disturbances they experience. Create a comprehensive, evidence-based sleep optimization plan covering sleep hygiene, circadian rhythm alignment, environmental adjustments, and behavioral changes. Reference relevant sleep science when helpful but keep advice practical and actionable. Suggest when a user should seek professional evaluation (e.g., for suspected sleep apnea or chronic insomnia). Format your response in clear markdown with a structured evening wind-down routine, bedroom optimization checklist, and habit-change timeline.",
+      "questions": [
+        {
+          "id": "sleep_schedule",
+          "text": "Describe your typical sleep schedule",
+          "helpText": null,
+          "type": "MULTI_LINE_TEXT",
+          "options": [],
+          "placeholder": "e.g., Go to bed at 11pm, fall asleep around midnight, wake at 6:30am, hit snooze twice..."
+        },
+        {
+          "id": "sleep_issues",
+          "text": "What sleep problems do you experience?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Difficulty Falling Asleep", "Waking Up During the Night", "Waking Too Early", "Not Feeling Rested", "Snoring/Breathing Issues", "Racing Thoughts at Bedtime", "Restless Legs/Twitching", "Excessive Daytime Sleepiness"],
+          "placeholder": null
+        },
+        {
+          "id": "sleep_environment",
+          "text": "Describe your bedroom environment",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Room Gets Outside Light", "Street/Ambient Noise", "TV/Screen in Bedroom", "Room Feels Too Warm", "Room Feels Too Cold", "Share Bed with Partner", "Pets Sleep in Room", "Mattress is 7+ Years Old"],
+          "placeholder": null
+        },
+        {
+          "id": "sleep_evening_habits",
+          "text": "What do you typically do in the 2 hours before bed?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Watch TV/Streaming", "Phone/Social Media Scrolling", "Eat a Meal or Snack", "Drink Caffeine or Alcohol", "Exercise", "Read a Book", "Work/Answer Emails", "Meditate/Relax"],
+          "placeholder": null
+        },
+        {
+          "id": "sleep_caffeine",
+          "text": "When do you have your last caffeinated drink?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Morning only (before 10am)", "Early afternoon (before 2pm)", "Late afternoon (2-5pm)", "Evening (after 5pm)", "I don't consume caffeine"],
+          "placeholder": null
+        }
+      ]
+    },
+    {
+      "id": "digital_wellness",
+      "name": "Digital Wellness",
+      "description": "Evaluate your screen time habits and build a healthier relationship with technology and digital devices.",
+      "iconName": "Psychology",
+      "systemPrompt": "You are a digital wellness coach and behavioral psychologist specializing in technology's impact on health. Analyze the user's screen time patterns, device usage habits, and how technology affects their physical and mental well-being. Create a personalized digital wellness plan that helps them build healthier boundaries with technology without being unrealistic. Include strategies for reducing blue light exposure, managing notification overload, preventing tech neck and eye strain, improving focus, and creating device-free rituals. Be practical and non-preachy -- technology is a tool, and the goal is intentional use, not elimination. Format your response in clear markdown with actionable daily and weekly goals.",
+      "questions": [
+        {
+          "id": "digital_screen_time",
+          "text": "Estimate your daily non-work screen time",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Less than 1 hour", "1-3 hours", "3-5 hours", "5-7 hours", "7+ hours"],
+          "placeholder": null
+        },
+        {
+          "id": "digital_devices",
+          "text": "Which devices do you use daily?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Smartphone", "Laptop/Desktop", "Tablet", "Smart TV/Streaming Device", "Gaming Console", "Smartwatch/Wearable", "E-Reader"],
+          "placeholder": null
+        },
+        {
+          "id": "digital_symptoms",
+          "text": "Do you experience any of the following?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Eye Strain/Dry Eyes", "Neck/Shoulder Pain", "Headaches", "Difficulty Sleeping After Screens", "Compulsive Phone Checking", "Difficulty Focusing on Long Tasks", "Anxiety from Social Media", "Feeling Overwhelmed by Notifications"],
+          "placeholder": null
+        },
+        {
+          "id": "digital_habits",
+          "text": "Which habits apply to you?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Check phone first thing in morning", "Use phone in bed before sleep", "Eat meals while watching screens", "Keep phone on during family time", "Feel anxious without phone nearby", "Scroll social media out of boredom"],
+          "placeholder": null
+        },
+        {
+          "id": "digital_goals",
+          "text": "What would you like to improve about your digital habits?",
+          "helpText": null,
+          "type": "MULTI_LINE_TEXT",
+          "options": [],
+          "placeholder": "e.g., Reduce mindless scrolling, stop using phone before bed, be more present with family..."
+        }
+      ]
+    },
+    {
+      "id": "pregnancy_prenatal",
+      "name": "Pregnancy & Prenatal",
+      "description": "Get personalized guidance on nutrition, product safety, and wellness practices during pregnancy.",
+      "iconName": "PregnantWoman",
+      "systemPrompt": "You are a certified nurse-midwife and prenatal wellness specialist with extensive experience in maternal health. Analyze the user's pregnancy stage, current habits, concerns, and lifestyle to provide personalized guidance on prenatal nutrition, safe products, exercise modifications, and overall wellness during pregnancy. Emphasize evidence-based recommendations and always note that your advice supplements, but does not replace, their OB-GYN or midwife's guidance. Flag any concerns that warrant immediate medical attention. Be supportive, reassuring, and thorough. Format your response in clear markdown with trimester-specific advice, a nutrition checklist, and a list of products/ingredients to avoid.",
+      "questions": [
+        {
+          "id": "pregnancy_stage",
+          "text": "What stage of pregnancy are you in?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Trying to Conceive", "First Trimester (weeks 1-12)", "Second Trimester (weeks 13-26)", "Third Trimester (weeks 27-40)", "Postpartum (after delivery)"],
+          "placeholder": null
+        },
+        {
+          "id": "pregnancy_concerns",
+          "text": "What are your top pregnancy wellness concerns?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Prenatal Nutrition", "Safe Skincare/Beauty Products", "Safe Cleaning Products", "Exercise During Pregnancy", "Morning Sickness Management", "Sleep Comfort", "Stress/Anxiety", "Toxin Exposure at Home or Work"],
+          "placeholder": null
+        },
+        {
+          "id": "pregnancy_supplements",
+          "text": "What prenatal supplements are you currently taking?",
+          "helpText": null,
+          "type": "MULTI_LINE_TEXT",
+          "options": [],
+          "placeholder": "e.g., Prenatal multivitamin, DHA/fish oil, iron supplement, folate..."
+        },
+        {
+          "id": "pregnancy_diet",
+          "text": "Any dietary restrictions or food aversions?",
+          "helpText": null,
+          "type": "MULTI_LINE_TEXT",
+          "options": [],
+          "placeholder": "e.g., Vegetarian, can't stand chicken right now, lactose intolerant..."
+        },
+        {
+          "id": "pregnancy_first_time",
+          "text": "Is this your first pregnancy?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Yes, first pregnancy", "No, I have been pregnant before", "Prefer not to say"],
+          "placeholder": null
+        }
+      ]
+    },
+    {
+      "id": "healthy_aging",
+      "name": "Healthy Aging",
+      "description": "Get evidence-based strategies for maintaining vitality, mobility, and cognitive health as you age.",
+      "iconName": "Elderly",
+      "systemPrompt": "You are a geriatrician and longevity medicine specialist focused on helping people age well through preventive health strategies. Analyze the user's age range, current health status, activity level, and concerns about aging. Create a personalized healthy aging plan covering nutrition for bone and brain health, mobility and balance exercises, cognitive stimulation, social engagement, and preventive screenings. Ground your advice in current longevity research and gerontology best practices. Be encouraging and empowering -- aging well is achievable at any starting point. Suggest when professional medical evaluation is appropriate. Format your response in clear markdown with categorized recommendations and a prioritized action plan.",
+      "questions": [
+        {
+          "id": "aging_age_range",
+          "text": "What is your age range?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["40-49", "50-59", "60-69", "70-79", "80+", "Planning ahead (under 40)"],
+          "placeholder": null
+        },
+        {
+          "id": "aging_concerns",
+          "text": "What aging-related concerns are most important to you?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Memory/Cognitive Decline", "Joint Pain/Arthritis", "Bone Density/Osteoporosis", "Heart Health", "Balance/Fall Prevention", "Vision/Hearing Changes", "Energy/Fatigue", "Maintaining Independence"],
+          "placeholder": null
+        },
+        {
+          "id": "aging_activity",
+          "text": "How physically active are you currently?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Very active (daily exercise)", "Moderately active (a few times/week)", "Lightly active (occasional walks)", "Mostly sedentary", "Limited by physical condition"],
+          "placeholder": null
+        },
+        {
+          "id": "aging_social",
+          "text": "How would you describe your social engagement?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Very social (regular activities/groups)", "Moderate (see friends/family weekly)", "Limited (mostly at home)", "Isolated (rarely interact with others)"],
+          "placeholder": null
+        },
+        {
+          "id": "aging_current_health",
+          "text": "Describe any current health conditions or medications",
+          "helpText": null,
+          "type": "MULTI_LINE_TEXT",
+          "options": [],
+          "placeholder": "e.g., High blood pressure managed with medication, pre-diabetic, knee replacement last year..."
+        }
+      ]
+    },
+    {
+      "id": "workplace_wellness",
+      "name": "Workplace Wellness",
+      "description": "Optimize your work environment and habits to reduce strain, boost focus, and protect your long-term health.",
+      "iconName": "Spa",
+      "systemPrompt": "You are an occupational health specialist and ergonomics expert with a background in workplace wellness program design. Analyze the user's work setup, daily work habits, physical complaints, and stress factors. Create a comprehensive workplace wellness plan covering ergonomic adjustments, movement breaks, eye health (20-20-20 rule), stress management during the workday, healthy snacking, and strategies for maintaining energy and focus. Provide specific product recommendations for ergonomic equipment where relevant, with options at different price points. Be practical and acknowledge real-world constraints like open offices and back-to-back meetings. Format your response in clear markdown with an ergonomic setup checklist, a daily wellness routine, and prioritized quick wins.",
+      "questions": [
+        {
+          "id": "work_setup",
+          "text": "Describe your primary work setup",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Office desk (in-office)", "Home office (dedicated space)", "Home office (makeshift/temporary)", "Hybrid (both office and home)", "On-the-go/Field work", "Standing most of the day"],
+          "placeholder": null
+        },
+        {
+          "id": "work_hours",
+          "text": "How many hours per day do you spend sitting at a desk?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Less than 4 hours", "4-6 hours", "6-8 hours", "8-10 hours", "10+ hours"],
+          "placeholder": null
+        },
+        {
+          "id": "work_symptoms",
+          "text": "Do you experience any of these work-related symptoms?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Back Pain (upper or lower)", "Neck/Shoulder Tension", "Wrist/Hand Pain (carpal tunnel)", "Eye Strain/Headaches", "Mental Fatigue/Brain Fog", "Afternoon Energy Crash", "Stress/Anxiety from Workload", "Poor Posture Awareness"],
+          "placeholder": null
+        },
+        {
+          "id": "work_equipment",
+          "text": "What ergonomic equipment do you currently use?",
+          "helpText": null,
+          "type": "CHECKLIST",
+          "options": ["Adjustable/Ergonomic Chair", "Standing Desk or Converter", "External Monitor", "External Keyboard/Mouse", "Monitor Riser/Arm", "Wrist Rest", "Footrest", "None of These"],
+          "placeholder": null
+        },
+        {
+          "id": "work_breaks",
+          "text": "How often do you take breaks or move during the workday?",
+          "helpText": null,
+          "type": "MULTIPLE_CHOICE",
+          "options": ["Every 30 minutes", "Every hour", "Every 2-3 hours", "Only at lunch", "Rarely/Never"],
           "placeholder": null
         }
       ]
